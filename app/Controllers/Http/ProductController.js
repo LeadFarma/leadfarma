@@ -18,6 +18,10 @@ class ProductController {
    * @param {View} ctx.view
    */
   async index ({ request, response, view }) {
+    let data = {
+      form_name:"Cadastro de Produtos",
+      }
+    return view.render('dashboard.forms' , {data:data})
   }
 
   /**

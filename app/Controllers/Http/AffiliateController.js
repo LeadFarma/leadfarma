@@ -19,10 +19,8 @@ class AffiliateController {
    */
   async index ({ request, response, view }) {
     let data = {
-      form_name:"Filiais",
-      name:"Pharma 1",
-      description:"New Pharma xyz ..."
-    }
+      form_name:"Cadastro de Filiais",
+      }
     return view.render('dashboard.forms' , {data:data})
   }
 

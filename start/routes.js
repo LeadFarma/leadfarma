@@ -16,5 +16,10 @@
 /** @type {typeof import('@adonisjs/framework/src/Route/Manager')} */
 const Route = use('Route')
 
-Route.on('/').render('website.index')
-Route.get('dashboard/affiliates' , 'AffiliateController.index')
+Route.on('/').render('website.index').as('index')
+Route.on('/dashboard').render('dashboard.index').as('dashboard')
+Route.get('dashboard/products' , 'ProductController.index').as('product')
+Route.get('dashboard/contacts' , 'ContactController.index').as('contact')
+Route.get('dashboard/users' , 'UserController.index').as('user')
+Route.get('dashboard/affiliates' , 'AffiliateController.index').as('affiliate')
+

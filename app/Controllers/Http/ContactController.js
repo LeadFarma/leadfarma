@@ -18,6 +18,10 @@ class ContactController {
    * @param {View} ctx.view
    */
   async index ({ request, response, view }) {
+    let data = {
+      form_name:"Cadastro de Contatos",
+      }
+    return view.render('dashboard.forms' , {data:data})
   }
 
   /**
