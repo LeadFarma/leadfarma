@@ -18,6 +18,12 @@ class AffiliateController {
    * @param {View} ctx.view
    */
   async index ({ request, response, view }) {
+    let data = {
+      form_name:"Filiais",
+      name:"Pharma 1",
+      description:"New Pharma xyz ..."
+    }
+    return view.render('dashboard.forms' , {data:data})
   }
 
   /**
