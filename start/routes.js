@@ -17,6 +17,7 @@
 const Route = use('Route')
 
 Route.on('/').render('website.index').as('index')
+Route.on('/landing').render('landing.index').as('index')
 Route.on('/dashboard').render('dashboard.index').as('dashboard')
 Route.get('dashboard/products' , 'ProductController.index').as('product')
 Route.get('dashboard/contacts' , 'ContactController.index').as('contact')
